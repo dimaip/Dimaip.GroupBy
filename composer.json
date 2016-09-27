@@ -1,0 +1,19 @@
+{
+    "name": "dimaip/groupby",
+    "description": "FlowQuery groupBy operation to group arrays by EEL discriminator",
+    "type": "neos-package",
+    "license": "GPL-3.0+",
+    "require": {
+        "typo3/neos": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Dimaip\\GroupBy": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Dimaip.GroupBy"
+        }
+    }
+}
