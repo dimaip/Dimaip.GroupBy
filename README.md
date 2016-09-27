@@ -33,3 +33,7 @@ prototype(Name.Space:GroupedList) < prototype(TYPO3.TypoScript:Collection) {
 ```
 
 In a similar way you can group nodes based on very complex EEL expressions, let your imagination fly!
+
+## Credit
+
+Initial development sponsored by Stefan Johänntgen
