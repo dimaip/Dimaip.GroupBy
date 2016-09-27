@@ -6,8 +6,10 @@ So I decided there should be a generic way to group array of nodes into subgroup
 
 ## TLDR;
 
+Install `composer require dimaip/groupby`
+
 ```
-groupedNodesByFirstLetterOfLastName = ${q(site).find('[instanceof Some.Node:Type]').groupBy('String.substring(node.properties.lastName, 0, 1)')}
+groupedNodesByFirstLetterOfLastName = ${q(nodes).groupBy('String.substring(node.properties.lastName, 0, 1)')}
 ```
 
 ## Full example
@@ -29,3 +31,5 @@ prototype(Name.Space:GroupedList) < prototype(TYPO3.TypoScript:Collection) {
 	}
 }
 ```
+
+In a similar way you can group nodes based on very complex EEL expressions, let your imagination fly!
