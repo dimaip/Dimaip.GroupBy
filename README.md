@@ -6,7 +6,7 @@ So I decided there should be a generic way to group array of nodes into subgroup
 
 ## TLDR;
 
-Install `composer require dimaip/groupby`
+Install: `composer require dimaip/groupby`
 
 ```
 groupedNodesByFirstLetterOfLastName = ${q(nodes).groupBy('String.substring(node.properties.lastName, 0, 1)')}
