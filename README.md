@@ -28,7 +28,7 @@ prototype(Name.Space:GroupedList) < prototype(TYPO3.TypoScript:Collection) {
 		@process.tmpl = ${'<div><h2>' + firstLetter + '</h2><ul>' + value + '</ul></div>'}
 		collection = ${nodes}
 		itemName = 'node'
-		itemRenderer = ${node.properties.lastName + ' ' + node.properties.lastName}
+		itemRenderer = ${'<li>' + node.properties.firstName + ' ' + node.properties.lastName + '</li>'}
 	}
 }
 ```
