@@ -1,13 +1,14 @@
 # Dimaip.GroupBy
 FlowQuery groupBy operation to group arrays by EEL discriminator
 
-Once upon a time I had a list of names, and I needed to group them by letter.
-So I decided there should be a generic way to group array of nodes into subgroups, based on EEL expression... And here it is!
+Once upon a time I had a list of persons nodes, and I needed to group them by first letter.
+So I decided there should be a generic way to group array of nodes into subgroups, based on an EEL expression... And here it is!
 
 ## TLDR;
 
 Install: `composer require dimaip/groupby`
 
+Use:
 ```
 groupedNodesByFirstLetterOfLastName = ${q(nodes).groupBy('String.substring(node.properties.lastName, 0, 1)')}
 ```
@@ -32,7 +33,7 @@ prototype(Name.Space:GroupedList) < prototype(TYPO3.TypoScript:Collection) {
 }
 ```
 
-In a similar way you can group nodes based on very complex EEL expressions, let your imagination fly!
+In a similar way you can group nodes based on a very complex EEL expressions, let your imagination fly!
 
 ## Credit
 
