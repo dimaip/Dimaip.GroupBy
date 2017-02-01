@@ -50,7 +50,7 @@ class GroupByOperation extends AbstractOperation {
 	protected $eelEvaluator;
 
 	/**
-	 * @Flow\InjectConfiguration(package="TYPO3.TypoScript", path="defaultContext")
+	 * @Flow\InjectConfiguration(package="Neos.Fusion", path="defaultContext")
 	 * @var array
 	 */
 	protected $defaultContextConfiguration;
