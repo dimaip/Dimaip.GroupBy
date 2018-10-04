@@ -60,7 +60,9 @@ class GroupByOperation extends AbstractOperation implements ProtectedContextAwar
     /**
      * @param \Neos\Eel\FlowQuery\FlowQuery $flowQuery
      * @param array $arguments
-     * @return array
+     * @return array|mixed|null
+     * @throws \Neos\Eel\Exception
+     * @throws \Neos\Eel\FlowQuery\FlowQueryException
      */
     public function evaluate(\Neos\Eel\FlowQuery\FlowQuery $flowQuery, array $arguments)
     {
