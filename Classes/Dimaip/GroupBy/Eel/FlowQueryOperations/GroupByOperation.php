@@ -3,6 +3,7 @@ namespace Dimaip\GroupBy\Eel\FlowQueryOperations;
 
 use Neos\ContentRepository\Domain\Model\NodeInterface;
 use Neos\Eel\FlowQuery\Operations\AbstractOperation;
+use Neos\Eel\ProtectedContextAwareInterface;
 use Neos\Flow\Annotations as Flow;
 
 /**
@@ -10,7 +11,7 @@ use Neos\Flow\Annotations as Flow;
  *
  * Takes an array of things and groups it by discriminator specified as as an Eel Expression
  */
-class GroupByOperation extends AbstractOperation
+class GroupByOperation extends AbstractOperation implements ProtectedContextAwareInterface
 {
     /**
      * {@inheritdoc}
@@ -82,5 +83,14 @@ class GroupByOperation extends AbstractOperation
         ksort($result);
 
         return $result;
+    }
+
+    /**
+     * @param string $methodName
+     * @return bool
+     */
+    public function allowsCallOfMethod($methodName)
+    {
+        return true;
     }
 }
