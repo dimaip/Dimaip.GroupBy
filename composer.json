@@ -93,7 +93,8 @@
             "Neos.Neos.Ui-20190319094900",
             "Neos.Flow-20190425144900",
             "Neos.Flow-20190515215000",
-            "Flowpack.ElasticSearch.ContentRepositoryAdaptor-20200513223401"
+            "Flowpack.ElasticSearch.ContentRepositoryAdaptor-20200513223401",
+            "Neos.Flow-20200813181400"
         ]
     }
 }
